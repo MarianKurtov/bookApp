@@ -1,0 +1,102 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "ISBN": 1231313131112,
+      "bookCover": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRO7Te2MLyEC2TPkOt7Ghh_SpYdEyuYUsznDwdc-0qhy-Ju4v0I"
+    },
+    {
+      "id": 2,
+      "title": "War and Peace",
+      "author": "Leo Tolstoy",
+      "ISBN": 1231313131113,
+      "bookCover": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWYniXJSbbjwtJ258myLWOiGa-ZpSiXV5JFeEfHdl_Ger7mlF_"
+    },
+    {
+      "id": 3,
+      "title": "The Grapes of Wrath",
+      "author": "John Steinbeck",
+      "ISBN": 1231313131114,
+      "bookCover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9PQAW30YI7_aJp2Qlp2h3l3PHzXALaiqS_QwNfWxlO3fHqzNJ"
+    },
+    {
+      "id": 6,
+      "title": "The Fault in Our Stars",
+      "author": "John Green",
+      "ISBN": 1231313131117,
+      "bookCover": "https://em.wattpad.com/b7ebcfce2742d9b0d2a3e503d6ea52dd53215d4c/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f32453248454e483467474d6339513d3d2d3238343339313638372e313436313638326437653333376136373433373433323138323336342e6a7067?s=fit&w=720&h=720g"
+    },
+    {
+      "id": 4,
+      "title": "Gone with the Wind",
+      "author": " Margaret Mitchell",
+      "ISBN": 1231313131115,
+      "bookCover": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0akIiZV1hBrHy7nppCgV2h1rP8jmbw9JFYUbxb0h8GoxnKlv3"
+    },
+    {
+      "id": 7,
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "ISBN": 1231313131118,
+      "bookCover": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQkQMUNaUeOy9h0tCqokQPtfPGO65-X87gUuJiYCqlFtL8-xeS"
+    },
+    {
+      "id": 8,
+      "title": "The Sun Also Rises",
+      "author": "Ernest Hemingway",
+      "ISBN": 1231313131119,
+      "bookCover": "https://upload.wikimedia.org/wikipedia/commons/8/8b/The_Sun_Also_Rises_%281st_ed._cover%29.jpg"
+    },
+    {
+      "title": "Nineteen Eighty-Four",
+      "author": "George Orwell",
+      "ISBN": 9789510459959,
+      "bookCover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeglXlBmm240qQ70HEi6CpdgjyevAGT78Vo8iOVtsLnkiDw5pb",
+      "id": 9
+    }
+  ],
+  "description": [
+    {
+      "id": 1,
+      "title": "To Kill a Mockingbird",
+      "description": "Set in the small Southern town of Maycomb, Alabama, during the Depression, To Kill a Mockingbird follows three years in the life of 8-year-old Scout Finch, her brother, Jem, and their father."
+    },
+    {
+      "id": 2,
+      "title": "War and Peace",
+      "description": "War and Peace is a literary work by Russian author Leo Tolstoy. Set during the Napoleonic Wars, the work mixes fictional narrative with chapters discussing history and philosophy. First published serially beginning in 1865."
+    },
+    {
+      "id": 3,
+      "title": "The Grapes of Wrath",
+      "description": "The Grapes of Wrath is an American realist novel written by John Steinbeck and published in 1939. The book won the National Book Award and Pulitzer Prize for fiction, and it was cited prominently when Steinbeck was awarded the Nobel Prize in 1962"
+    },
+    {
+      "id": 6,
+      "title": "The Fault in Our Stars",
+      "description": "The Fault in Our Stars by John Green is a young adult fiction novel that narrates the story of a 16-year-old girl who is diagnosed with cancer. She joins a support group where she meets Augustus."
+    },
+    {
+      "id": 4,
+      "title": "Gone with the Wind",
+      "description": "Gone With the Wind is a story about civil war, starvation, rape, murder, heartbreak and slavery. It is not necessarily a book one would associate with hope. And yet, at the novel's heart lies Scarlett O'Hara."
+    },
+    {
+      "id": 7,
+      "title": "Brave New World",
+      "description": "The novel examines a futuristic society, called the World State, that revolves around science and efficiency. In this society, emotions and individuality are conditioned out of children at a young age."
+    },
+    {
+      "id": 8,
+      "title": "The Sun Also Rises",
+      "description": "The Sun Also Rises is a 1926 novel written by American author Ernest Hemingway about a group of American and British expatriates who travel from Paris to the Festival of San Fermín in Pamplona to watch the running of the bulls and the bullfights."
+    },
+    {
+      "title": "Nineteen Eighty-Four",
+      "description": "Nineteen Eighty-Four is a dystopian social science fiction novel and cautionary tale by English writer George Orwell. It was published on 8 June 1949 by Secker & Warburg as Orwell's ninth and final book completed in his lifetime. ",
+      "id": 9
+    }
+  ]
+}

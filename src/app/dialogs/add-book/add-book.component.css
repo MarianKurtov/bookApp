@@ -1,0 +1,22 @@
+mat-card {
+    margin: 2px;
+    text-align: center;
+}
+
+.mat-mdc-form-field {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.buttons-class {
+    padding-top: 25px;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

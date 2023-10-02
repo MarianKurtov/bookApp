@@ -1,0 +1,43 @@
+<div class="container">
+  <mat-toolbar><span>ONLINE BOOK LIBRARY</span>
+    <div class="searchBar">
+      <label class="Search">Search by author or book title</label>
+      <input matInput placeholder="search..." (keyup)="applyFilter($event)" #input >
+    </div>
+    <button mat-raised-button color="primary" class="addBook" (click)="addBook()">Add new book</button>
+  </mat-toolbar>
+<table mat-table [dataSource]="dataSource | searchFilter: searchValue" matSort>
+  <ng-container matColumnDef="title">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Title </th>
+    <td mat-cell *matCellDef="let book"
+        (click)="openDialog(book.title, book.author, book.bookCover, book.ISBN)"> {{ book.title }} </td>
+  </ng-container>
+  <ng-container matColumnDef="author">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Author </th>
+    <td mat-cell *matCellDef="let book"
+        (click)="openDialog(book.title, book.author, book.bookCover, book.ISBN)"> {{ book.author }} </td>
+  </ng-container>
+  <ng-container matColumnDef="ISBN">
+    <th mat-header-cell *matHeaderCellDef> ISBN </th>
+    <td mat-cell *matCellDef="let book"
+        (click)="openDialog(book.title, book.author, book.bookCover, book.ISBN)"> {{ book.ISBN }} </td>
+  </ng-container>
+  <ng-container matColumnDef="bookCover">
+    <th mat-header-cell *matHeaderCellDef> Book Cover </th>
+    <td mat-cell *matCellDef="let book"
+        (click)="openDialog(book.title, book.author, book.bookCover, book.ISBN)">
+        <img width="60" height="70" [src]="book.bookCover"/></td>
+  </ng-container>
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  <tr *matNoDataRow>
+    <td class="mat-cell" colspan="6">
+      Filter do not match any book title or author like: "{{ input.value }}"
+    </td>
+  </tr>
+</table>
+  <mat-paginator [pageSizeOptions]="[5, 10, 15, 30, 100]"
+                 (page) = "onPageChange($event)"
+                 aria-label="Select page">
+  </mat-paginator>
+</div>

@@ -1,0 +1,32 @@
+<h1 mat-dialog-title>Add new book</h1>
+<div mat-dialog-content>
+    <form [formGroup]="insertBookForm" (ngSubmit)="submitForm()">
+        <mat-form-field>
+            <mat-label>Book title</mat-label>
+            <input matInput type="text" id="title" formControlName="title" [class.invalid]="insertBookForm.get('title')?.invalid">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Book Author</mat-label>
+            <input matInput type="text" id="author" formControlName="author" [class.invalid]="insertBookForm.get('author')?.invalid">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Book ISBN</mat-label>
+            <input matInput type="number" id="ISBN" formControlName="ISBN" [class.invalid]="insertBookForm.get('ISBN')?.invalid">
+            <mat-error >The ISBN must be 13 digits long!</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Book cover</mat-label>
+            <input matInput type="text" id="bookCover" formControlName="bookCover" [class.invalid]="insertBookForm.get('bookCover')?.invalid">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Book description</mat-label>
+            <input matInput type="text" id="bookDescription" formControlName="bookDescription" [class.invalid]="insertBookForm.get('bookDescription')?.invalid">
+        </mat-form-field>
+
+        <div mat-dialog-actions class="buttons-class" >
+            <button type="button" mat-raised-button color="warn" (click)="closeDialog()">Close</button>
+            <button type="submit" mat-raised-button color="primary" [disabled]="!insertBookForm.valid">Save</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Book information</h1>
+<div>
+    <mat-dialog-content align="center">
+     <h1 mat-dialog-title> Title: {{ data.title }}</h1>
+      <h2>Author: {{ data.author }}</h2>
+    </mat-dialog-content>
+  <img class="center" [src]="data.bookCover" alt="" />
+  <mat-dialog-content align="center" >
+    <a>ISBN:</a>
+    <a> {{ data.ISBN }} </a>
+      <mat-dialog-content align="center">
+         <h3>Description: {{ data.bookDescription }}</h3>
+      </mat-dialog-content>
+  </mat-dialog-content>
+</div>
