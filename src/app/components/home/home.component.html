@@ -26,7 +26,7 @@
     <th mat-header-cell *matHeaderCellDef> Book Cover </th>
     <td mat-cell *matCellDef="let book"
         (click)="openDialog(book.title, book.author, book.bookCover, book.ISBN)">
-        <img width="60" height="70" [src]="book.bookCover"/></td>
+        <img width="60" height="70" [src]="book.bookCover" alt="bookCover"/></td>
   </ng-container>
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
